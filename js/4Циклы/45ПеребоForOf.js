@@ -76,3 +76,9 @@ for (let i = 0; i < arr.length; i++) {
         document.write(arr[i] + ' ');
     }
 } //другое решение пока не нашла
+
+let year = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+let month = year[9];
+for (let month of year) {
+    console.log(month);
+}
