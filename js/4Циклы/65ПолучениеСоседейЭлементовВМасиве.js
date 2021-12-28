@@ -85,3 +85,10 @@ for (let i = 0; i < arr.length; i++) {
         console.log(arr[i - 1] + arr[i] + arr[i + 1]);
     }
 }
+
+
+let arr = [1, 2, 3, 4, 5, 6];
+for (let i = 1; i < arr.length - 1; i++) {
+    //- нулевой и последний элементы не берем, тк у них нет нужных соседей
+    console.log(arr[i - 1] + arr[i] + arr[i + 1]);
+} //более правильный код
