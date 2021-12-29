@@ -54,7 +54,7 @@ for (let elem of arr) {
         break;
     }
 }
-console.log(result); //39
+console.log(result); //40
 
 let arr = [9, 8, 7, 5, 0, 6, 4, -3, 6, 1];
 result = 0;
@@ -83,22 +83,22 @@ console.log(result); //43
 /*Задача 3
 Дан массив с числами. Найдите позицию первого числа 3 в этом массиве 
 (считаем, что это число обязательно есть в массиве).*/
-let arr = [9, 8, 7, 5, 0, 6, 4, 3, 6, 1];
-result = 0;
-for (let elem of arr) {
-    if (elem == 3) {
-        console.log(elem);
+// let arr = [9, 8, 7, 5, 0, 6, 4, 3, 6, 1];
+// result = 0;
+// for (let elem of arr) {
+//     if (elem == 3) {
+//         console.log(elem);
+//         break;
+//     }
+// }
+
+let arr = [1, 8, 23, 3, -6, 8, 2, 0, 9, 12, 36, 85, 15];
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] == 3) {
+        console.log(i);
         break;
     }
 }
-
-// let arr = [1,8,23,3,-6,8,2,0,9,12,36,85,15];
-// for(let i = 0; i < arr.length; i++){
-// if(arr[i] == 3){
-// console.log(i);
-// break;
-// }
-// }
 
 // let arr = [1, 2, 3, 4, 5, 3]; 
 // let i = 0, found = false;
@@ -120,22 +120,26 @@ let arr = [10, 20, 30, 12, 40, 50, 10];
 let result = 0;
 for (let i = 0; i < arr.length; i++) {
     result += arr[i];
-    if (arr[i] == 1) {
-        console.log(arr[i]); //10, 10, 10
+    if (result >= 100) {
+        console.log();
+        console.log(result); //10, 10, 10
         break;
     }
 }
 //////////////////////////////////////////////////
 let arr = [10, 20, 30, 12, 40, 50, 10];
 let result = 0;
-for (let elem of arr) {
-    if (elem <= )
-        result += arr[i];
-    if (arr[i] == 1) {
-        console.log(arr[i]); //10, 10, 10
-        break;
+for (let i = 0; i < arr.length; i++) {
+    for (let elem of arr) {
+        if (elem <= 100)
+            result += arr[i];
+        if (arr[i] == 1) {
+            console.log(arr[i]); //10, 10, 10
+            break;
+        }
     }
 }
+
 ////////////////////////////////////////////////////////////
 
 let arr = [1, 2, 3, 4, 5, 3];

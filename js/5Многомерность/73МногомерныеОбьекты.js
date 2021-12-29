@@ -101,16 +101,20 @@ let obj = {
     }
 };
 let sum = 0;
-for (let elem1 in obj) {
-    for (let elem2 in obj[elem1]) {
-        for (let elem3 in obj[elem1][elem2]) {
-            for (let elem4 in obj[elem1][elem2][elem3]) {
-                sum += +elem4;
-            }
-        }
+for (let key in obj) {
+    let obj1 = obj[key];
+    for (let key1 in obj1) {
+        sum += +obj1[key1];
     }
 }
-console.log(sum); //пока не могу решить эту задачу
+console.log(sum); // NaN
+// for (let key in obj) {
+//     let subObj = obj[key];
+//     for (let subKey in subObj) {
+//         console.log(subObj[subKey]);
+//     }
+// }
+//пока не могу решить эту задачу
 
 // /*3 Дан следующий объект:*/
 // let obj = { key1: { a: 1, b: 2, c: { d: 3, e: 4, }, f: 5, }, key2: { g: 6, h: 7, }, }
