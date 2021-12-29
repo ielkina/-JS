@@ -75,7 +75,7 @@ for (let key in obj) {
     resultValue = obj[key];
     var sum = resultKey / resultValue;
 }
-console.log(sum);
+console.log(sum); //1.5
 
 /*Задача 5
 Дан следующий объект:
