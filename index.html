@@ -13,17 +13,32 @@
     <h1>Hello World!</h1>
 
     <script>
-        let arr = ['январь', 'февраль', 'март', 'апрель', 'март', 'май', 'июнь', 'июль',
-            'август', 'сентябрь', 'октябрь', 'декабрь'
-        ]
-        let month = 'октябрь';
-        for (let i = 0; i < arr.length; i++) {
-            if (arr[i] == month) {
-                document.write('<i>' + arr[i] + '</i>' + ' ');
-            } else {
-                document.write(arr[i] + ' ');
-            }
+        let users = [{
+            name: 'name1',
+            age: 31,
+        }, {
+            name: 'name2',
+            age: 32,
+        }, {
+            name: 'name3',
+            age: 33,
+        }, ];
+        //Давайте переберем этот массив циклом и выведем данные юзеров на экран:
+        for (let user of users) {
+            document.write(user.name + ' ' + user.age + '<br>');
         }
+
+        // let arr = ['январь', 'февраль', 'март', 'апрель', 'март', 'май', 'июнь', 'июль',
+        //     'август', 'сентябрь', 'октябрь', 'декабрь'
+        // ]
+        // let month = 'октябрь';
+        // for (let i = 0; i < arr.length; i++) {
+        //     if (arr[i] == month) {
+        //         document.write('<i>' + arr[i] + '</i>' + ' ');
+        //     } else {
+        //         document.write(arr[i] + ' ');
+        //     }
+        // }
 
         // let year = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
         // let month = year[9];
