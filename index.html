@@ -1,68 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="" />
-		<title>Изучаем JS по Трипачеву</title>
-	</head>
 
-	<body>
-		<h1>Hello World!</h1>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="" />
+    <title>Изучаем JS по Трипачеву</title>
+</head>
 
-		<script>
-			let users = [
-				{
-					name: "name1",
-					age: 31,
-				},
-				{
-					name: "name2",
-					age: 32,
-				},
-				{
-					name: "name3",
-					age: 33,
-				},
-			];
-			//Давайте переберем этот массив циклом и выведем данные юзеров на экран:
-			for (let user of users) {
-				document.write(user.name + " " + user.age + "<br>");
-			}
+<body>
+    <h1>Hello World!</h1>
 
-			// let arr = ['январь', 'февраль', 'март', 'апрель', 'март', 'май', 'июнь', 'июль',
-			//     'август', 'сентябрь', 'октябрь', 'декабрь'
-			// ]
-			// let month = 'октябрь';
-			// for (let i = 0; i < arr.length; i++) {
-			//     if (arr[i] == month) {
-			//         document.write('<i>' + arr[i] + '</i>' + ' ');
-			//     } else {
-			//         document.write(arr[i] + ' ');
-			//     }
-			// }
+    <script>
+        function func() {
+            let result = 0;
+            for (let i = 1; i <= 100; i++) {
+                result = result + i;
+            }
+            alert(result);
+        }
+        func();
+        //   function func() {
+        //       alert('hello world!');
+        //   }
+        //   func();
+        // let users = [
+        // 	{
+        // 		name: "name1",
+        // 		age: 31,
+        // 	},
+        // 	{
+        // 		name: "name2",
+        // 		age: 32,
+        // 	},
+        // 	{
+        // 		name: "name3",
+        // 		age: 33,
+        // 	},
+        // ];
+        //Давайте переберем этот массив циклом и выведем данные юзеров на экран:
+        // for (let user of users) {
+        // 	document.write(user.name + " " + user.age + "<br>");
+        // }
 
-			// let year = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-			// let month = year[9];
+        // let arr = ['январь', 'февраль', 'март', 'апрель', 'март', 'май', 'июнь', 'июль',
+        //     'август', 'сентябрь', 'октябрь', 'декабрь'
+        // ]
+        // let month = 'октябрь';
+        // for (let i = 0; i < arr.length; i++) {
+        //     if (arr[i] == month) {
+        //         document.write('<i>' + arr[i] + '</i>' + ' ');
+        //     } else {
+        //         document.write(arr[i] + ' ');
+        //     }
+        // }
 
-			// for (let i = 0; i < year.length; i++) {
-			//     if (year[i] == month) {
-			//         document.write("<i>" + year[i] + "</i>" + " ");
-			//     } else {
-			//         document.write(year[i] + " ");
-			//     }
-			// }
-		</script>
-	</body>
+        // let year = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        // let month = year[9];
+
+        // for (let i = 0; i < year.length; i++) {
+        //     if (year[i] == month) {
+        //         document.write("<i>" + year[i] + "</i>" + " ");
+        //     } else {
+        //         document.write(year[i] + " ");
+        //     }
+        // }
+    </script>
+</body>
+
 </html>
-
-klh
-jh
-lkh
-
-
-
-
-
-
