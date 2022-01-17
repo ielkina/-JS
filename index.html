@@ -13,6 +13,124 @@
 		<h1>Hello World!</h1>
 
 		<script>
+			function func() {
+				let sum = 0;
+
+				for (let i = 1; i <= 5; i++) {
+					sum += i;
+					return sum;
+				}
+			}
+			let result = func();
+			alert(result);
+
+			// function func(num) {
+			// 	if (num <= 0) {
+			// 		return Math.abs(num);
+			// 	}
+			// 	return num * num;
+			// }
+			// alert(func(10));//100
+			// alert(func(-5));//5
+
+			// function func(num) {
+			// 	if (num <= 0) {
+			// 		return Math.abs(num);
+			// 	} else {
+			// 		return num * num;
+			// 	}
+			// }
+			// alert(func(10));//100
+			// alert(func(-5));//5
+
+			// function func(num) {
+			// 	return num;
+			// 	let result = num * num;
+			// 	return result;
+			// }
+			// alert(func(3));//3
+
+			// function func(num) {
+			// 	return num * num;
+			// 	alert('!'); // этот код никогда не выполнится
+			// }
+			// let result = func(3);//код не выполниться
+
+			// function round(num) {
+			// 	return num.toFixed(3);
+			// }
+			// function sqrt(num) {
+			// 	return Math.sqrt(num);
+			// }
+			// function sum(num1, num2, num3) {
+			// 	return num1 + num2 + num3;
+			// }
+			// let result = round(sum(sqrt(2), sqrt(3), sqrt(4)));
+			// alert(result);//5.146
+
+			// function sqrt(num) {
+			// 	return Math.sqrt(num);
+			// }
+
+			// function sum(num1, num2, num3) {
+			// 	return num1 + num2 + num3;
+			// }
+			// //С помощью этих функций найдите сумму корней чисел 2, 3 и 4 и запишите ее в переменную result.
+			// let result = sum(sqrt(2), sqrt(3), sqrt(4));
+			// alert(result);//5.146264369941973
+
+			// function sqrt(num) {
+			// 	return Math.sqrt(num);//1.4142135623730951
+			// }
+			// function round(num) {
+			// 	return num.toFixed(3);
+			// }
+			// /*С помощью этих функций найдите квадратный корень из числа 2 и округлите его до
+			// трех знаков в дробной части.*/
+			// let result = round(sqrt(2));
+			// alert(result);//1.414
+
+			// function square(num) {
+			// 	return num * num;//4, 9
+			// }
+			// function sum(num1, num2) {
+			// 	return num1 + num2;//4+9=13
+			// }
+
+			// //Найдем с помощью этих функций сумму квадрата числа 2 и сумму квадрата числа 3:
+
+			// let result = sum(square(2), square(3));
+			// alert(result);//13
+
+			// function square(num) {
+			// 	return num * num;//2*2=4
+			// }
+			// function cube(num) {
+			// 	return num * num * num;
+			// }
+			// /*Давайте с помощью этих функций возведем число 2 в квадрат, а затем результат этой операции
+			// возведем в куб:*/
+
+			// let result = cube(square(2));//4*4*4=64
+			// alert(result);//64
+
+			// function func(num) {
+			// 	return Math.sqrt(num);
+			// }
+			// let result = func(3) + func(4);
+			// alert(result);//3.732050807568877
+
+			// function func(num) {
+			// 	return num * num;
+			// }
+			// let result = func(2) + func(3);
+			// alert(result); // выведет 13
+
+			// function name(num) {
+			// 	return num * num;
+			// }
+			// let result = name(3) * 3;
+			// alert(result);
 			// function func(num1 = 0, num2 = 0) {
 			// 	alert(num1 + num2);
 			// }
