@@ -1,26 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="" />
-    <title>Изучаем JS по Трипачеву</title>
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="" />
+		<title>Изучаем JS по Трипачеву</title>
+	</head>
 
-<body>
-    <h1>Hello World!</h1>
+	<body>
+		<h1>Hello World!</h1>
 
-    <script>
-        function func() {
-            let result = 0;
-            for (let i = 1; i <= 100; i++) {
-                result = result + i;
-            }
-            alert(result);
-        }
-        func();
+		<script>
+			// function func(num1 = 0, num2 = 0) {
+			// 	alert(num1 + num2);
+			// }
+			// //Эта функция вызывается следующим образом:
+			// func(2, 3);//5 2+3
+			// func(3);//3 3+0
+			// func();//0 0+0
+			// //Расскажите, каким будет результат каждого из вызовов функции.*/
+
+			// function func(num = 5) {
+			// 	alert(num * num);
+			// }
+			// //Эта функция вызывается следующим образом:
+			// func(2);//4 num*num=4
+			// func(3);//9 num*num=9
+			// func();//25 num=5 num*num=25
+			// //Расскажите, каким будет результат каждого из вызовов функции.
+
+			// function func(name = 'Аноним', age = 'неизвестен') {//имя и возвраст необязательны
+			// 	alert('ваше имя: ' + name + ' возраст: ' + age);
+			// }
+			// func();//ваше имя: Аноним возраст: неизвестен
+
+			// function func(name, age = 'неизвестен') {//возраст необязателен
+			// 	alert('ваше имя: ' + name + ' возраст: ' + age);
+			// }
+			// func();//ваше имя: undefined возраст: неизвестен
+			// func('Вася');//ваше имя: Вася возраст: неизвестен
+
+			// function func(name, age) {
+			// 	alert('ваше имя: ' + name + ' возраст: ' + age);
+			// }
+			// func();//Ваше имя: undefine Возвраст: undefine
+			// function func(name = 'Аноним') {
+			// 	alert('ваше имя: ' + name);
+			// }
+			// //Проверим теперь работу нашей функции:
+			// // Без параметра:
+			// func(); // выведет 'ваше имя: Аноним'(без параметра)
+			// func('Вася'); // выведет 'ваше имя: Вася' (с параметром)
+
+			// function func(name) {
+			// 	alert('ваше имя: ' + name);
+			// }
+			// //Проверим работу нашей функции:
+			// func('Ирина'); // выведет 'ваше имя: Вася'
+			// function sum(num1, num2, num3) {
+			// 	alert(num1 + num2 + num3);
+			// }
+			// let param1 = 1;
+			// let param2 = 2;
+			// let param3 = 3;
+			// sum(param1, param2, param3);
+
+			// function sum(num1, num2, num3) {
+			// 	alert(num1 + num2 + num3);
+			// }
+			// sum(1, 2, 3);
+			// function someNum(num) {
+			// 	if (num > 0) {
+			// 		alert('+++');
+			// 	} else {
+			// 		alert('---');
+			// 	}
+
+			// }
+			// someNum(-21);
+			//////////////////
+			// function func(num) {
+			// 	alert((num * num) * num)
+			// }
+			// func(9)
+      //   function func() {
+      //       let result = 0;
+      //       for (let i = 1; i <= 100; i++) {
+      //           result = result + i;
+      //       }
+      //       alert(result);
+      //   }
+      //   func();
         //   function func() {
         //       alert('hello world!');
         //   }
@@ -66,7 +138,7 @@
         //         document.write(year[i] + " ");
         //     }
         // }
-    </script>
-</body>
+		</script>
+	</body>
 
 </html>
